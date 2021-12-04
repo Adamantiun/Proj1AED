@@ -3,4 +3,5 @@ project(Proj1)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Proj1 src/main.cpp)
+add_executable(Proj1 cmake-build-debug/main.cpp)
+//liberas esteve aqui
