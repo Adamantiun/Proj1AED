@@ -1,3 +1,0 @@
-C:/Users/Acer/Desktop/AED/Proj1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-C:/Users/Acer/Desktop/AED/Proj1/cmake-build-debug/CMakeFiles/Proj1.dir
-C:/Users/Acer/Desktop/AED/Proj1/cmake-build-debug/CMakeFiles/edit_cache.dir
