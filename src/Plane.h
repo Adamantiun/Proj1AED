@@ -5,33 +5,38 @@
 #ifndef PROJ1_PLANE_H
 #define PROJ1_PLANE_H
 
+#include <list>
+#include <string>
+#include <queue>
+#include "Flight.h"
+#include "PlaneService.h"
+
+using namespace std;
+
 class Plane{
-    private:
-    String registration;
-    String type;
+private:
+    string registration;
+    string type;
     int capacity;
-    List<Flight> flights;
-    Queue<PlaneService> pastServices;
-    Queue<PlaneService> futureServices;
+    list<Flight> flights;
+    queue<PlaneService> pastServices;
+    queue<PlaneService> futureServices;
 public:
-    Plane(String registration, String type, int capacity);
-    void SetFlights(List<Flight> flights);
+    Plane(string registration, string type, int capacity);
+    void SetFlights(list<Flight> flights);
     void SetPastServices(Queue<PlaneService> pastServices);
     void SetFutureServices(Queue<PlaneService> futureServices);
-    String GetRegistration() const;
-    String GetType() const;
+    string GetRegistration() const;
+    string GetType() const;
     int GetCapacity() const;
-    List<Flight> GetFlights() const;
-    Queue<PlaneService> GetPastServices() const;
-    Queue<PlaneService> GetFutureServices() const;
-    void UpdateRegistration(String registration);
-    void UpdateType(String type);
+    list<Flight> GetFlights() const;
+    queue<PlaneService> GetPastServices() const;
+    queue<PlaneService> GetFutureServices() const;
+    void UpdateRegistration(string registration);
+    void UpdateType(string type);
     void UpdateCapacity(int capacity);
-    void UpdateFlights(List<Flight> flights);
     void AddFlight(Flight flight);
-    void UpdatePastServices(Queue<PlaneService> pastServices);
     void AddPastService(PlaneService service);
-    void UpdateFutureServices(Queue<PlaneService> futureServices);
     void AddFutureService(PlaneService service);
 };
 
