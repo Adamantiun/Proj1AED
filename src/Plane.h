@@ -14,10 +14,10 @@ class Plane{
     Queue<PlaneService> pastServices;
     Queue<PlaneService> futureServices;
 public:
-    Plane(String registration, String type, int capacity){};
-    void SetFlights(List<Flight> flights){};
-    void SetPastServices(Queue<PlaneService> pastServices){};
-    void SetFutureServices(Queue<PlaneService> futureServices){};
+    Plane(String registration, String type, int capacity);
+    void SetFlights(List<Flight> flights);
+    void SetPastServices(Queue<PlaneService> pastServices);
+    void SetFutureServices(Queue<PlaneService> futureServices);
     String GetRegistration() const;
     String GetType() const;
     int GetCapacity() const;
